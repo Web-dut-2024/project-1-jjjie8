@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线百科全书</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>在线百科全书</h1>
+            <div class="sidebar">
+                <input type="text" id="search" placeholder="搜索条目...">
+                <button onclick="performSearch()">搜索</button>
+                <a href="/create">创建新页面</a>
+                <a href="/random">随机页面</a>
+            </div>
+        </header>
+        <main>
+            <h2>条目列表</h2>
+            <ul id="entry-list">
+                <li><a href="/wiki/Python">Python</a></li>
+                <li><a href="/wiki/JavaScript">JavaScript</a></li>
+                <li><a href="/wiki/HTML">HTML</a></li>
+                <!-- 更多条目 -->
+            </ul>
+        </main>
+    </div>
+    <script>
+        function performSearch() {
+            const query = document.getElementById('search').value;
+            // 这里可以添加逻辑来处理搜索请求
+            // 比如重定向或显示搜索结果
+        }
+    </script>
+</body>
+
+</html>
